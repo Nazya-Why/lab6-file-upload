@@ -338,7 +338,10 @@
     const box = $('.step-text', el);
     $$('.st', box).forEach(o => { o.style.setProperty('--sdir', fwd ? 1 : -1); o.classList.remove('in'); o.classList.add('out'); setTimeout(() => o.remove(), 450); });
     const d = document.createElement('div'); d.className = 'st';
-    d.innerHTML = st.t || `<span class="ph">Вставте текст кроку зі звіту — рис. ${st.f}</span>`;
+    // the figure number is already shown above, so drop a leading «Рисунок N –»
+    const txt = (st.t || '').replace(/^\s*Рисунок\s*\d+\s*[–—-]\s*/, '').trim();
+    d.innerHTML = txt || `<span class="ph">Вставте текст кроку зі звіту — рис. ${st.f}</span>`;
+    if (txt.replace(/<[^>]+>/g, '').length > 120) d.classList.add('long');
     let wi = 0;
     // wrap words (top-level text) and inline elements
     [...d.childNodes].forEach(n => {

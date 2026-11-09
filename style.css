@@ -574,3 +574,4 @@ code {
 .st .ph { color: var(--ink-3); font-style: italic; }
 
 .s-end .cards4 { top: 445px; }
+.st.long { font-size: 25px; line-height: 1.38; }
