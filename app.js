@@ -59,7 +59,7 @@
       </div></div>
       <p class="topic" data-a style="--d:1"><b>${M.topicLead}</b> ${M.topicRest}</p>
       <div class="meta">
-        <div class="meta-col" data-a style="--d:1.1"><span class="k">Автор</span><b>${M.author}</b><span>ст. гр. ${M.group}</span></div>
+        <div class="meta-col" data-a style="--d:1.1"><span class="k">Виконали</span><b>Студенти групи ${M.group}</b></div>
         <div class="meta-col" data-a style="--d:1.18"><span class="k">Прийняв</span><b>${M.teacher}</b><span>${M.teacherTitle}</span></div>
         <div class="meta-col" data-a style="--d:1.26"><span class="k">Заклад</span><b>${M.org}</b><span>${M.dept}</span></div>
         <div class="meta-col" data-a style="--d:1.34"><span class="k">${M.city}</span><b>${M.year}</b></div>
@@ -182,7 +182,7 @@
       <div class="links">
         <a class="big-btn solid" data-a style="--d:1" href="${M.reference}" target="_blank" rel="noopener">PortSwigger · File upload <span class="arr">↗</span></a>
         <button class="big-btn" data-a style="--d:1.08" data-go="0">На початок <span class="arr">↺</span></button>
-        <div class="sign" data-a style="--d:1.16"><b>${M.author} · ${M.group}</b><br>${M.org} · ${M.city} ${M.year}</div>
+        <div class="sign" data-a style="--d:1.16"><b>Студенти групи ${M.group}</b><br>${M.org} · ${M.city} ${M.year}</div>
       </div>`
   });
 
